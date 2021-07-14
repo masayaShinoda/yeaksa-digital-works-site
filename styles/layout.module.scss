@@ -1,0 +1,44 @@
+@import "./_variables.scss";
+
+// margins
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+    min-height: 100vh;
+    // border: 1px solid red; //debug
+}
+@media (min-width: $ultrawide-bp) {
+    //ultrawide container size
+    .container {
+        width: 1440px;
+        max-width: 1440px;
+        // border: 1px solid green; //debug
+
+    }
+}
+@media (min-width: $desktop-bp) {
+    //widescreen container size
+    .container {
+        width: 1280px;
+        max-width: 1280px;
+        // border: 1px solid blue; //debug
+    }
+}
+@media (max-width: $tablet-bp) {
+    //ultrawide container size
+    .container {
+        width: 640px;
+        max-width: 640px;
+        // border: 1px solid orange; //debug
+    }
+}
+@media (max-width: $mobile-bp) {
+    //ultrawide container size
+    .container {
+        width: 337.5px;
+        max-width: 337.5px;
+        border: 1px solid purple; //debug
+    }
+}

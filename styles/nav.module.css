@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap");
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  padding: 0 4.25vw;
+  padding-top: 7.5vh;
+  max-height: 100px;
+}
+
+.navbar .logoLink {
+  min-width: 20% !important;
+  width: 20%;
+}
+
+.navbar .logoLink img {
+  margin: 0 !important;
+  border: 1px solid red;
+}
+
+.navbar nav a {
+  margin: 0 1.1rem;
+  -webkit-transition: .2s color ease-in;
+  transition: .2s color ease-in;
+}
+
+.navbar nav a:hover {
+  color: #008ec4;
+}
+
+@media (max-width: 1023px) {
+  .navbar {
+    padding: 0;
+    padding-top: 10vh;
+  }
+  .navbar .logoLink {
+    width: 35%;
+  }
+}
+/*# sourceMappingURL=nav.module.css.map */

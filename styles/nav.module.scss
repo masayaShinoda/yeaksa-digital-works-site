@@ -1,0 +1,40 @@
+@import "./_variables.scss";
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    padding: 0 4.25vw;
+    padding-top: 7.5vh;
+    max-height: 100px;
+    .logoLink {
+        min-width: 20% !important;
+        width: 20%;
+        img {
+            margin: 0 !important;
+            
+            // width: 20vw;
+            // object-fit: contain;
+            border: 1px solid red; //debug
+        }
+    }
+    nav {
+        a {
+            margin: 0 1.1rem;
+            transition: .2s color ease-in;
+        }
+        a:hover {
+            color: darken($ysdw-blue, 25%);
+        }
+    }
+}
+@media (max-width: $tablet-bp) {
+    .navbar {
+        padding: 0;
+        padding-top: 10vh;
+        .logoLink {
+            width: 35%;
+        }
+    }
+}
