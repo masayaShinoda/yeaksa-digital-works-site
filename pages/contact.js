@@ -10,14 +10,14 @@ function ContactForm() {
     return (
         <form onSubmit={handleSubmit} className={styles.contactForm}>
           <span>
-            <label for="fname">First name:</label>
+            <label htmlFor="fname">First name:</label>
             <input type="text" id="fname" name="fname" />
             <ValidationError 
               prefix="First Name" 
               field="fname"
               errors={state.errors}
             />
-            <label for="lname">Last name:</label>
+            <label htmlFor="lname">Last name:</label>
             <input type="text" id="lname" name="lname" />
             <ValidationError 
               prefix="Last Name" 
