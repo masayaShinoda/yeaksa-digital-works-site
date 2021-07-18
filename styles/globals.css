@@ -36,7 +36,25 @@ a {
 
 h1 {
   font-family: "Nunito Sans", sans-serif;
-  font-weight: 800;
-  font-size: 64px;
+  font-weight: 700;
+  font-size: 52px;
+}
+
+@media (max-width: 1024px) {
+  a {
+    font-size: 21px;
+  }
+  h1 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 480px) {
+  a {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 32px;
+  }
 }
 /*# sourceMappingURL=globals.css.map */

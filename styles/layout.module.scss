@@ -8,6 +8,10 @@
     // justify-content: center;
     min-height: 100vh;
     // border: 1px solid red; //debug
+    main {
+        width: 100%;
+        padding: 7.5vh 0;
+    }
 }
 @media (min-width: $ultrawide-bp) {
     //ultrawide container size
@@ -23,7 +27,9 @@
     .container {
         width: 1280px;
         max-width: 1280px;
+        padding: 0 10%;
         // border: 1px solid blue; //debug
+        // background: orange; //debug
     }
 }
 @media (max-width: $tablet-bp) {
@@ -39,6 +45,6 @@
     .container {
         width: 337.5px;
         max-width: 337.5px;
-        border: 1px solid purple; //debug
+        // border: 1px solid purple; //debug
     }
 }

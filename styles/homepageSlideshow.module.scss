@@ -1,0 +1,28 @@
+@import "./_variables.scss";
+
+.slideshow {
+    height: 480px;
+    width: 480px;
+    aspect-ratio: 1 / 1;
+    // border: 1px solid red; //debug
+    .slideWrapper {
+        width: 100%;
+        height: 100%;
+        // border: 1px solid green; //debug
+        .slide {
+            // border: 1px solid blue; //debug
+            width: 100%;
+            height: 100%;
+            background-image: url("/images/4_frame_4x5-TRANSPARENT-NO-WINDOW-SHADOW_result.webp");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+}
+@media (max-width: $tablet-bp) {
+    .slideshow {
+        width: 360px;
+        height: 360px;
+    }
+}

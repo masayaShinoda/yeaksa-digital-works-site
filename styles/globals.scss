@@ -27,4 +27,12 @@ a {
   font-size: 24px;
 }
 
-h1 {font-family: $head; font-weight: 800; font-size: 64px;}
+h1 {font-family: $head; font-weight: 700; font-size: 52px;}
+@media (max-width: $tablet-bp) {
+  a {font-size: 21px}
+  h1 {font-size: 42px}
+}
+@media (max-width: $mobile-bp) {
+  a {font-size: 18px}
+  h1 {font-size: 32px}
+}

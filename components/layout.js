@@ -1,11 +1,21 @@
 import { NextSeo } from 'next-seo'
 import Nav from "../components/nav.js"
 import styles from "../styles/layout.module.css"
-
+import Head from "next/head"
 export default function Layout({ children, pageName }) {
 
     return (
         <div className={styles.container}>
+            <Head>
+                <title>YeakSa Digital Works</title>
+                <meta name="description" content="Design agency based in Phnom Penh with an Esports niche." />
+                <link rel="icon" href="/icons/brand-identity-golden-ratio-08_result.ico" />
+                <script type="text/javascript" src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+                <link
+                    rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+                /> {/* css animation library */}
+            </Head>
             {pageName ? 
                 <NextSeo 
                     title={`${pageName} | YeakSa Digital Works`}

@@ -1,0 +1,38 @@
+@import "./_variables.scss";
+
+.homepageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 100%;
+    margin-top: 5vh;
+    // border: 1px solid red; //debug
+    h1 {
+        max-width: fit-content;
+        max-height: max-content;
+        margin-bottom: 15vh;
+        min-height: 150px;
+        // border: 1px solid green; //debug
+    }
+}
+@media (max-width: $mobile-bp) {
+    .homepageContainer {margin-top: 12.5vh;}
+}
+.heroSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;    
+    width: 100%;
+    margin-top: 5vh;
+    // border: 1px solid blue; //debug
+}
+@media (max-width: $tablet-bp) {
+    .heroSection {margin-top: 7.5vh}
+}
+.hero {
+    color: $ysdw-blue;
+    font-weight: 800;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}

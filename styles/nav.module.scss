@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: flex-end;
     width: 100%;
-    padding: 0 4.25vw;
+    // paddi    ng: 0 4.25vw;
     padding-top: 7.5vh;
     max-height: 100px;
     .logoLink {
@@ -35,6 +35,19 @@
         padding-top: 10vh;
         .logoLink {
             width: 35%;
+        }
+    }
+}
+@media (max-width: $mobile-bp) {
+    .navbar {
+        .logoLink {
+            width: 40%;
+        }
+        nav {
+            a {
+                margin: 0 .5rem;
+            }
+
         }
     }
 }

@@ -1,0 +1,61 @@
+@import "./_variables.scss";
+
+.contactForm {
+    // width: 65%;
+    display: flex;
+    // flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    // border: 1px solid red; //debug
+    span {
+        display: flex; flex-direction: column; align-items: flex-start;
+    }
+    span:nth-of-type(2) {
+        margin: 0 35px;
+        justify-content: space-between;
+        align-items: space-between;
+        // border: 1px solid green; //debug
+    }
+    @media (max-width: $mobile-bp) {
+        span:nth-of-type(2) {margin: 0}
+    }
+    label {
+        display: flex;
+        font-size: 120%;
+        max-width: fit-content;
+        font-family: $body;
+        margin: 20px 0 5px 0;
+        // border: 1px solid green; //debug
+    }
+    input, textarea {
+        padding: 5px 10px;
+    }
+    textarea {min-height: 150px}
+    button[type=submit] {
+        display: flex;
+        justify-content: center;
+        // font-weight: 700;
+        font-size: 125%;
+        font-family: $head;
+        margin-top: 25px;
+        width: 100%;
+        padding: 10px 20px;
+    }
+}
+@media (max-width: $mobile-bp) {
+    .contactForm {
+        flex-direction: column;
+        align-items: stretch;
+
+        input {
+            width: 100%;
+        }
+        textarea {
+            width: 100%;
+        }
+        button[type=submit] {
+            padding: 15px 20px;
+        }
+
+    }
+}
