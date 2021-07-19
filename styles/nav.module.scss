@@ -40,6 +40,8 @@
 }
 @media (max-width: $mobile-bp) {
     .navbar {
+        padding: 0;
+        padding-top: 5vh;
         .logoLink {
             width: 40%;
         }

@@ -46,6 +46,10 @@
 }
 
 @media (max-width: 480px) {
+  .navbar {
+    padding: 0;
+    padding-top: 5vh;
+  }
   .navbar .logoLink {
     width: 40%;
   }
