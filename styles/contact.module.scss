@@ -88,8 +88,7 @@
     width: 35%;
     margin: 0 35px;
     aspect-ratio: 1 / 1;
-    outline: 3px $ysdw-blue solid;
-    outline-offset: 25px;
+    outline: 0;
 }
 @media (max-width: $tablet-bp) {
     .googleMaps {
