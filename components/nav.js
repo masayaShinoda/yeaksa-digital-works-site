@@ -5,7 +5,7 @@ import styles from "../styles/nav.module.css"
 
 export default function Nav() {
     return (
-        <div className={styles.navbar}>
+        <div className={styles.navbar} style={{overflow: `hidden`}}>
             <Link href="/">
                 <a className={styles.logoLink + ` animate__animated animate__slideInLeft`}>
                     <Image src={Logo} placeholder="blur" alt="Logo" />
