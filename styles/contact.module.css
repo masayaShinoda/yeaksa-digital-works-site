@@ -144,6 +144,7 @@
 .googleMaps {
   width: 35%;
   margin: 0 35px;
+  margin-top: 25px;
   aspect-ratio: 1 / 1;
   outline: 0;
 }
