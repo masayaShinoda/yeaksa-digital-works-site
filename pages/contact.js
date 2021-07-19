@@ -50,7 +50,7 @@ function ContactForm() {
               errors={state.errors}
             />
             <button type="submit" disabled={state.submitting}>
-              Submit
+              Send message
             </button>
           </span>
       </form>
@@ -62,7 +62,7 @@ export default function Contact() {
 
     return (
         <Layout>
-          <h1>Contact us</h1>
+          <h1 style={{textAlign: `center`}}>Contact us</h1>
             <div className={styles.contactContainer}>
             <ContactForm />
               <iframe 

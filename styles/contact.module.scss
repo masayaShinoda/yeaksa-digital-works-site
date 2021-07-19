@@ -58,7 +58,13 @@
         width: 100%;
         padding: 10px 20px;
         cursor: pointer;
-
+        color: #fcfcfc;
+        border: 0;
+        background: darken($ysdw-blue, 15%);
+        transition: background .2s ease-in-out;
+    }
+    button:hover[type=submit], button:hover[type=submit] {
+        background: $ysdw-blue;
     }
 }
 @media (max-width: $mobile-bp) {

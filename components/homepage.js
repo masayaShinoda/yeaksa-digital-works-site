@@ -22,7 +22,7 @@ export default function Homepage() {
             .typeString('the norm.')
             .start();           
         }, 
-    [])
+    )
 
     return (
         <div className={styles.homepageContainer}>
@@ -34,7 +34,7 @@ export default function Homepage() {
                 <HomepageSlideshow />
             </section>
             
-            <script async src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+            {/* <script async src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script> */}
         </div>
     )
 }

@@ -20,12 +20,16 @@
         }
     }
     nav {
+        .active {
+            color: darken($ysdw-blue, 25%);
+            // border: 1px solid red;
+        }
         a {
             margin: 0 1.1rem;
             transition: .2s color ease-in;
         }
         a:hover {
-            color: darken($ysdw-blue, 25%);
+            color: $ysdw-blue;
         }
     }
 }

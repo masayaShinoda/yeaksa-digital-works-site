@@ -102,6 +102,15 @@
   width: 100%;
   padding: 10px 20px;
   cursor: pointer;
+  color: #fcfcfc;
+  border: 0;
+  background: #00b3f7;
+  -webkit-transition: background .2s ease-in-out;
+  transition: background .2s ease-in-out;
+}
+
+.contactForm button:hover[type=submit], .contactForm button:hover[type=submit] {
+  background: #44CCFF;
 }
 
 @media (max-width: 480px) {
