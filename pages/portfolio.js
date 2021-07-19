@@ -1,4 +1,5 @@
 import Layout from "../components/layout"
+import Image from "next/image"
 import { useState, useEffect } from "react"
 import styles from "../styles/portfolio.module.css"
 
@@ -37,9 +38,9 @@ export default function Portfolio() {
 
                 </div>
                 <div className={styles.selectionTriangle}>
-                    <img className={styles.triangle} id="leftTriangle" src="/svg/impossible-triangle-left.svg" alt="" />
-                    <img className={styles.triangle} id="bottomTriangle" src="/svg/impossible-triangle-bottom.svg" alt="" />
-                    <img className={styles.triangle} id="rightTriangle" src="/svg/impossible-triangle-right.svg" alt="" />
+                    <Image className={styles.triangle} layout="fill" id="leftTriangle" src="/svg/impossible-triangle-left.svg" alt="" />
+                    <Image className={styles.triangle} layout="fill" id="bottomTriangle" src="/svg/impossible-triangle-bottom.svg" alt="" />
+                    <Image className={styles.triangle} layout="fill" id="rightTriangle" src="/svg/impossible-triangle-right.svg" alt="" />
 
                 </div>
             </div>

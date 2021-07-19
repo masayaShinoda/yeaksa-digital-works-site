@@ -95,4 +95,15 @@
   left: 90px;
   right: 90px;
 }
+
+@media (max-width: 480px) {
+  .portfolioContainer .selectionTriangle {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  .portfolioContainer .textTriangle {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+}
 /*# sourceMappingURL=portfolio.module.css.map */

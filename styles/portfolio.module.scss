@@ -67,9 +67,17 @@
             top: 450px;
             left: 90px;
             right: 90px;
-
             // transform: rotateY(45deg);
         }
 
+    }
+
+    @media (max-width: $mobile-bp) {
+        .selectionTriangle {
+            transform: scale(0.6);
+        }
+        .textTriangle {
+            transform: scale(0.6);
+        }
     }
 }
