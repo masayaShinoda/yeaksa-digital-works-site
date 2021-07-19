@@ -5,10 +5,6 @@ import Nav from "../components/nav"
 import Homepage from "../components/homepage"
 
 export default function Home() {
-
-
-
-
   return (
     <Layout>
       <Homepage />
