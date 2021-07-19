@@ -29,7 +29,20 @@
     // border: 1px solid blue; //debug
 }
 @media (max-width: $tablet-bp) {
-    .heroSection {margin-top: 7.5vh}
+    .heroSection {
+        flex-wrap: nowrap;
+        
+        
+    }
+}
+@media (max-width: $mobile-bp) {
+    .homepageContainer {
+        margin-top: 0;
+        h1 {margin: 0;}
+    }
+    .heroSection {
+        flex-direction: column;
+    }
 }
 .hero {
     color: $ysdw-blue;

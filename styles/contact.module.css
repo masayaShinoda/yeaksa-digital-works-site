@@ -1,5 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap");
+.contactContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media (max-width: 1024px) {
+  .contactContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .contactForm {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -54,11 +74,18 @@
 }
 
 .contactForm input, .contactForm textarea {
-  padding: 5px 10px;
+  padding: 10px 10px;
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+
+.contactForm input:focus, .contactForm textarea:focus {
+  border: 2px solid #44CCFF;
 }
 
 .contactForm textarea {
   min-height: 150px;
+  resize: none;
 }
 
 .contactForm button[type=submit] {
@@ -73,6 +100,7 @@
   margin-top: 25px;
   width: 100%;
   padding: 10px 20px;
+  cursor: pointer;
 }
 
 @media (max-width: 480px) {
@@ -84,6 +112,13 @@
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
+    width: 100%;
+  }
+  .contactForm span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
   }
   .contactForm input {
     width: 100%;
@@ -93,6 +128,31 @@
   }
   .contactForm button[type=submit] {
     padding: 15px 20px;
+  }
+}
+
+.googleMaps {
+  width: 35%;
+  margin: 0 35px;
+  aspect-ratio: 1 / 1;
+  outline: 3px #44CCFF solid;
+  outline-offset: 25px;
+}
+
+@media (max-width: 1024px) {
+  .googleMaps {
+    margin: 35px 0;
+    width: 75%;
+    aspect-ratio: 4 / 3;
+    outline: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .googleMaps {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    outline: 0;
   }
 }
 /*# sourceMappingURL=contact.module.css.map */

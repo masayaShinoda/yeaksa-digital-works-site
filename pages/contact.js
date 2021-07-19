@@ -10,18 +10,18 @@ function ContactForm() {
     return (
         <form onSubmit={handleSubmit} className={styles.contactForm}>
           <span>
-            <label htmlFor="fname">First name:</label>
-            <input type="text" id="fname" name="fname" />
+            <label htmlFor="name">Name:</label>
+            <input type="text" id="name" name="name" />
             <ValidationError 
-              prefix="First Name" 
-              field="fname"
+              prefix="Name" 
+              field="name"
               errors={state.errors}
             />
-            <label htmlFor="lname">Last name:</label>
-            <input type="text" id="lname" name="lname" />
+            <label htmlFor="phone">Phone/Telegram:</label>
+            <input type="tel" id="phone" name="phone" />
             <ValidationError 
-              prefix="Last Name" 
-              field="lname"
+              prefix="Phone" 
+              field="phone"
               errors={state.errors}
             />
             <label htmlFor="email">
@@ -63,7 +63,18 @@ export default function Contact() {
     return (
         <Layout>
           <h1>Contact us</h1>
+            <div className={styles.contactContainer}>
             <ContactForm />
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2324.3189114465767!2d104.92582309996094!3d11.550216269554296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951834c548605%3A0x4b931f0c8bc93776!2sYeakSa%20Esports!5e0!3m2!1sen!2skh!4v1626684967570!5m2!1sen!2skh" 
+                style={{border:0}} 
+                allowfullscreen="" 
+                className={styles.googleMaps}
+                loading="lazy"
+              >  
+              </iframe>
+
+            </div>
         </Layout>
     )
 }

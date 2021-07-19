@@ -26,4 +26,10 @@
     height: 360px;
   }
 }
+
+@media (max-width: 480px) {
+  .slideshow {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=homepageSlideshow.module.css.map */

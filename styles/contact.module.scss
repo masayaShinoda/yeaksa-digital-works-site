@@ -1,5 +1,17 @@
 @import "./_variables.scss";
 
+.contactContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+@media (max-width: $tablet-bp) {
+    .contactContainer {
+        flex-direction: column;
+        
+    }
+}
+
 .contactForm {
     // width: 65%;
     display: flex;
@@ -28,9 +40,14 @@
         // border: 1px solid green; //debug
     }
     input, textarea {
-        padding: 5px 10px;
+        padding: 10px 10px;
+        border: 2px solid rgba(0,0,0,.25);
+        border-radius: 2px;
     }
-    textarea {min-height: 150px}
+    input:focus, textarea:focus {
+        border: 2px solid $ysdw-blue;
+    }
+    textarea {min-height: 150px; resize: none;}
     button[type=submit] {
         display: flex;
         justify-content: center;
@@ -40,13 +57,20 @@
         margin-top: 25px;
         width: 100%;
         padding: 10px 20px;
+        cursor: pointer;
+
     }
 }
 @media (max-width: $mobile-bp) {
     .contactForm {
         flex-direction: column;
         align-items: stretch;
-
+        width: 100%;
+        span {
+            // border: 1px solid orange; //debug
+            display: flex;
+            width: 100%;
+        }
         input {
             width: 100%;
         }
@@ -57,5 +81,28 @@
             padding: 15px 20px;
         }
 
+    }
+}
+
+.googleMaps {
+    width: 35%;
+    margin: 0 35px;
+    aspect-ratio: 1 / 1;
+    outline: 3px $ysdw-blue solid;
+    outline-offset: 25px;
+}
+@media (max-width: $tablet-bp) {
+    .googleMaps {
+        margin: 35px 0;
+        width: 75%;
+        aspect-ratio: 4 / 3;
+        outline: 0;
+    }
+}
+@media (max-width: $mobile-bp) {
+    .googleMaps {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        outline: 0;
     }
 }
