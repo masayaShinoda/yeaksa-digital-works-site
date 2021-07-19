@@ -47,7 +47,7 @@
     input:focus, textarea:focus {
         border: 2px solid $ysdw-blue;
     }
-    textarea {min-height: 150px; min-width: 250px; resize: none;}
+    textarea {min-height: 150px; min-width: 300px; resize: none;}
     button[type=submit] {
         display: flex;
         justify-content: center;
@@ -67,6 +67,7 @@
         background: $ysdw-blue;
     }
 }
+
 @media (max-width: $mobile-bp) {
     .contactForm {
         flex-direction: column;
