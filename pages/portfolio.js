@@ -2,9 +2,9 @@ import Layout from "../components/layout"
 import Image from "next/image"
 import { useState, useEffect } from "react"
 import styles from "../styles/portfolio.module.css"
-import leftTriangle from "../public/svg/impossible-triangle-left.svg"
-import bottomTriangle from "../public/svg/impossible-triangle-bottom.svg"
-import rightTriangle from "../public/svg/impossible-triangle-right.svg"
+// import leftTriangle from "/svg/impossible-triangle-left.svg"
+// import bottomTriangle from "/svg/impossible-triangle-bottom.svg"
+// import rightTriangle from "/svg/impossible-triangle-right.svg"
 
 export default function Portfolio() {
     const [activeSelection, setActiveSelection] = useState(null);
@@ -41,9 +41,9 @@ export default function Portfolio() {
 
                 </div>
                 <div className={styles.selectionTriangle}>
-                    <Image className={styles.triangle} layout="fill" id="leftTriangle" src={leftTriangle} alt="leftTriangle" />
-                    <Image className={styles.triangle} layout="fill" id="bottomTriangle" src={bottomTriangle} alt="bottomTriangle" />
-                    <Image className={styles.triangle} layout="fill" id="rightTriangle" src={rightTriangle} alt="rightTriangle" />
+                    <Image className={styles.triangle} layout="fill" id="leftTriangle" src={require("../public/svg/impossible-triangle-left.svg")} alt="leftTriangle" />
+                    <Image className={styles.triangle} layout="fill" id="bottomTriangle" src={require("../public/svg/impossible-triangle-bottom.svg")} alt="bottomTriangle" />
+                    <Image className={styles.triangle} layout="fill" id="rightTriangle" src={require("../public/svg/impossible-triangle-right.svg")} alt="rightTriangle" />
 
                 </div>
             </div>
