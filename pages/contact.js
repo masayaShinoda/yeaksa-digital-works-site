@@ -68,7 +68,7 @@ export default function Contact() {
               <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2324.3189114465767!2d104.92582309996094!3d11.550216269554296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951834c548605%3A0x4b931f0c8bc93776!2sYeakSa%20Esports!5e0!3m2!1sen!2skh!4v1626684967570!5m2!1sen!2skh" 
                 style={{border:0}} 
-                allowfullscreen="" 
+                allowFullScreen
                 className={styles.googleMaps}
                 loading="lazy"
               >  
