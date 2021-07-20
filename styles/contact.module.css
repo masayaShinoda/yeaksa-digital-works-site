@@ -113,6 +113,13 @@
   background: #44CCFF;
 }
 
+@media (max-width: 1024px) {
+  .contactForm {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 @media (max-width: 480px) {
   .contactForm {
     -webkit-box-orient: vertical;

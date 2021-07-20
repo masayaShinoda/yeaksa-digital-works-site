@@ -37,17 +37,15 @@ export default function Portfolio() {
         <Layout>
             <div className={styles.portfolioContainer}>
                 <h1 style={{textAlign: `center`}}>Portfolio</h1>
-                <div className={styles.textTriangle}>
-                    <span onClick={() => setActiveSelection("gfx")}>Graphic Design</span>
-                    <span onClick={() => setActiveSelection("web")}>Web Design</span>
-                    <span onClick={() => setActiveSelection("photo")}>Photography</span>
-
-                </div>
                 <div className={styles.selectionTriangle}>
                     <Image className={styles.triangle} layout="fill" id="leftTriangle" src={left} alt="leftTriangle" />
                     <Image className={styles.triangle} layout="fill" id="bottomTriangle" src={bottom} alt="bottomTriangle" />
                     <Image className={styles.triangle} layout="fill" id="rightTriangle" src={right} alt="rightTriangle" />
-
+                </div>
+                <div className={styles.textTriangle}>
+                    <span onClick={() => setActiveSelection("gfx")}>Graphic Design</span>
+                    <span onClick={() => setActiveSelection("web")}>Web Design</span>
+                    <span onClick={() => setActiveSelection("photo")}>Photography</span>
                 </div>
             </div>
 

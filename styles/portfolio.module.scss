@@ -15,9 +15,9 @@
         align-items: center;
         position: absolute;
         top: 250px;
+        z-index: -10;
         // border: 1px solid green; //debug
         img {
-            z-index: -10;
             position: absolute;
             width: 480px;
             height: 480px;
@@ -32,7 +32,7 @@
         height: 480px;
         position: absolute;
         top: 250px;
-
+        
         // border:2px solid blue; //debug
         span {
             position: absolute;    
@@ -74,10 +74,12 @@
 
     @media (max-width: $mobile-bp) {
         .selectionTriangle {
-            transform: scale(0.6);
+            transform: scale(0.7);
+            top: 120px;
         }
         .textTriangle {
-            transform: scale(0.6);
+            transform: scale(0.7);
+            top: 120px;
         }
     }
 }

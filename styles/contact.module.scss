@@ -67,7 +67,13 @@
         background: $ysdw-blue;
     }
 }
-
+@media (max-width: $tablet-bp) {
+    .contactForm {
+        flex-wrap: wrap;
+        
+        // border: 1px solid red; //debug
+    }
+}
 @media (max-width: $mobile-bp) {
     .contactForm {
         flex-direction: column;

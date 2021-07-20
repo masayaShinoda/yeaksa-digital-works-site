@@ -29,10 +29,10 @@
           align-items: center;
   position: absolute;
   top: 250px;
+  z-index: -10;
 }
 
 .portfolioContainer .selectionTriangle img {
-  z-index: -10;
   position: absolute;
   width: 480px;
   height: 480px;
@@ -98,12 +98,14 @@
 
 @media (max-width: 480px) {
   .portfolioContainer .selectionTriangle {
-    -webkit-transform: scale(0.6);
-            transform: scale(0.6);
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    top: 120px;
   }
   .portfolioContainer .textTriangle {
-    -webkit-transform: scale(0.6);
-            transform: scale(0.6);
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    top: 120px;
   }
 }
 /*# sourceMappingURL=portfolio.module.css.map */
