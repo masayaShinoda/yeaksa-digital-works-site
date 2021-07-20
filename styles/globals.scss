@@ -37,3 +37,41 @@ h1 {font-family: $head; font-weight: 700; font-size: 52px;}
   a {font-size: 18px}
   h1 {font-size: 32px}
 }
+
+.upperDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  // border: 1px solid red; //debug
+  button.inactive {
+    opacity: 0;
+    cursor: default;
+    z-index: -10;
+  }
+  button {
+    display: inline;
+    cursor: pointer;
+    padding: 5px 10px;
+    background: 0;
+    border: 0;
+    font-family: $head;
+    font-size: 24px;
+    font-weight: 700;
+    z-index: 10;
+    // border: 1px solid green; //debug
+  }
+  h1 {
+    font-weight: 800;
+    justify-self: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: $mobile-bp) {
+  .upperDiv {
+    button {
+      font-size: 21px;
+    }
+  }
+}

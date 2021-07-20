@@ -58,4 +58,49 @@ h1 {
     font-size: 32px;
   }
 }
+
+.upperDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+}
+
+.upperDiv button.inactive {
+  opacity: 0;
+  cursor: default;
+  z-index: -10;
+}
+
+.upperDiv button {
+  display: inline;
+  cursor: pointer;
+  padding: 5px 10px;
+  background: 0;
+  border: 0;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  z-index: 10;
+}
+
+.upperDiv h1 {
+  font-weight: 800;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .upperDiv button {
+    font-size: 21px;
+  }
+}
 /*# sourceMappingURL=globals.css.map */

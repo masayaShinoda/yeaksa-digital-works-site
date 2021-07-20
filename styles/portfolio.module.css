@@ -15,9 +15,13 @@
           align-items: center;
 }
 
-.portfolioContainer .selectionTriangle {
+.portfolioContainer .selectionTriangle, .portfolioContainer .textTriangle {
   width: 480px;
   height: 480px;
+  top: 280px;
+}
+
+.portfolioContainer .selectionTriangle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,7 +32,6 @@
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  top: 250px;
   z-index: -10;
 }
 
@@ -38,6 +41,10 @@
   height: 480px;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+  -webkit-transition: -webkit-filter .2s ease-in;
+  transition: -webkit-filter .2s ease-in;
+  transition: filter .2s ease-in;
+  transition: filter .2s ease-in, -webkit-filter .2s ease-in;
 }
 
 .portfolioContainer .selectionTriangle .active {
@@ -46,10 +53,7 @@
 }
 
 .portfolioContainer .textTriangle {
-  width: 480px;
-  height: 480px;
   position: absolute;
-  top: 250px;
 }
 
 .portfolioContainer .textTriangle span {
@@ -97,15 +101,23 @@
 }
 
 @media (max-width: 480px) {
-  .portfolioContainer .selectionTriangle {
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
-    top: 120px;
+  .portfolioContainer .selectionTriangle, .portfolioContainer .textTriangle {
+    -webkit-transform: scale(0.7, 0.7) !important;
+            transform: scale(0.7, 0.7) !important;
+    top: 150px;
   }
-  .portfolioContainer .textTriangle {
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
-    top: 120px;
-  }
+}
+
+.selectionTriangle, .textTriangle {
+  -webkit-transition: opacity .4s ease-in-out;
+  transition: opacity .4s ease-in-out;
+}
+
+.selectionTriangle.active, .textTriangle.active {
+  margin-right: 200%;
+  -webkit-transition: .8s ease-in-out;
+  transition: .8s ease-in-out;
+  -webkit-transition-delay: .8;
+          transition-delay: .8;
 }
 /*# sourceMappingURL=portfolio.module.css.map */

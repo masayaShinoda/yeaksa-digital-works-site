@@ -7,14 +7,16 @@
     flex-direction: column;
     align-items: center;
     // border: 1px solid red;
-    .selectionTriangle {
+    .selectionTriangle, .textTriangle {
         width: 480px;
         height: 480px;
+        top: 280px;
+    }
+    .selectionTriangle {
         display: flex;
         justify-content: center;
         align-items: center;
         position: absolute;
-        top: 250px;
         z-index: -10;
         // border: 1px solid green; //debug
         img {
@@ -22,17 +24,14 @@
             width: 480px;
             height: 480px;
             filter: grayscale(100%);
+            transition: filter .2s ease-in;
         }
         .active {
             filter: none;
         }
     }
     .textTriangle {
-        width: 480px;
-        height: 480px;
         position: absolute;
-        top: 250px;
-        
         // border:2px solid blue; //debug
         span {
             position: absolute;    
@@ -73,13 +72,18 @@
     }
 
     @media (max-width: $mobile-bp) {
-        .selectionTriangle {
-            transform: scale(0.7);
-            top: 120px;
-        }
-        .textTriangle {
-            transform: scale(0.7);
-            top: 120px;
+        .selectionTriangle, .textTriangle {
+            transform: scale(0.7, 0.7) !important;
+            top: 150px;
         }
     }
+}
+.selectionTriangle, .textTriangle {
+    transition: opacity .4s ease-in-out;
+
+}
+.selectionTriangle.active, .textTriangle.active {
+    margin-right: 200%;
+    transition: .8s ease-in-out;
+    transition-delay: .8;
 }

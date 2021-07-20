@@ -70,7 +70,7 @@ export default function Contact() {
                 style={{border:0}} 
                 allowFullScreen
                 className={styles.googleMaps}
-                loading="lazy"
+                // loading="lazy"
               >  
               </iframe>
             </div>

@@ -17,17 +17,41 @@ export default function Portfolio() {
             document.querySelector("#leftTriangle").classList.add(`${styles.active}`)
             document.querySelector("#bottomTriangle").classList.remove(`${styles.active}`)            
             document.querySelector("#rightTriangle").classList.remove(`${styles.active}`)            
+            document.querySelector("#selectionTriangle").classList.add(`${styles.active}`)
+            document.querySelector("#textTriangle").classList.add(`${styles.active}`)
+            document.querySelector("#portfolioTitle").textContent = "Graphics Design"
+            document.querySelector("#backBtn").classList.toggle("inactive")
 
         }
         if(activeSelection == "web") {
             document.querySelector("#rightTriangle").classList.add(`${styles.active}`)    
             document.querySelector("#bottomTriangle").classList.remove(`${styles.active}`)            
-            document.querySelector("#leftTriangle").classList.remove(`${styles.active}`)           
+            document.querySelector("#leftTriangle").classList.remove(`${styles.active}`)      
+            document.querySelector("#selectionTriangle").classList.add(`${styles.active}`)
+            document.querySelector("#textTriangle").classList.add(`${styles.active}`)
+            document.querySelector("#portfolioTitle").textContent = "Web Design & Development"
+            document.querySelector("#backBtn").classList.toggle("inactive")
+
         }
         if(activeSelection == "photo") {
             document.querySelector("#bottomTriangle").classList.add(`${styles.active}`) 
             document.querySelector("#leftTriangle").classList.remove(`${styles.active}`)            
-            document.querySelector("#rightTriangle").classList.remove(`${styles.active}`)              
+            document.querySelector("#rightTriangle").classList.remove(`${styles.active}`)   
+            document.querySelector("#selectionTriangle").classList.add(`${styles.active}`)
+            document.querySelector("#textTriangle").classList.add(`${styles.active}`)
+            document.querySelector("#portfolioTitle").textContent = "Photography"
+            document.querySelector("#backBtn").classList.toggle("inactive")
+
+        }
+        if(activeSelection == "inactive") {
+            document.querySelector("#bottomTriangle").classList.remove(`${styles.active}`) 
+            document.querySelector("#leftTriangle").classList.remove(`${styles.active}`)            
+            document.querySelector("#rightTriangle").classList.remove(`${styles.active}`)   
+            document.querySelector("#selectionTriangle").classList.remove(`${styles.active}`)
+            document.querySelector("#textTriangle").classList.remove(`${styles.active}`)
+            document.querySelector("#portfolioTitle").textContent = "Portfolio"
+            document.querySelector("#backBtn").classList.toggle("inactive")
+
         }
         console.log(activeSelection)
     }, [activeSelection])
@@ -36,16 +60,45 @@ export default function Portfolio() {
     return (
         <Layout>
             <div className={styles.portfolioContainer}>
-                <h1 style={{textAlign: `center`}}>Portfolio</h1>
-                <div className={styles.selectionTriangle}>
+                <span className="upperDiv">
+                    <button
+                        onClick={() => {
+                            setActiveSelection("inactive")
+                        }}
+                        id="backBtn"
+                        className="inactive"
+                    >
+                        &#8249; Back
+                    </button>
+                    <h1 style={{textAlign: `center`}} id="portfolioTitle">Portfolio</h1>
+                </span>
+                <div
+                    className={styles.selectionTriangle + ` animate__animated animate__rotateIn animate__delay-1s`}
+                    id="selectionTriangle"
+                >
                     <Image className={styles.triangle} layout="fill" id="leftTriangle" src={left} alt="leftTriangle" />
                     <Image className={styles.triangle} layout="fill" id="bottomTriangle" src={bottom} alt="bottomTriangle" />
                     <Image className={styles.triangle} layout="fill" id="rightTriangle" src={right} alt="rightTriangle" />
                 </div>
-                <div className={styles.textTriangle}>
-                    <span onClick={() => setActiveSelection("gfx")}>Graphic Design</span>
-                    <span onClick={() => setActiveSelection("web")}>Web Design</span>
-                    <span onClick={() => setActiveSelection("photo")}>Photography</span>
+                <div 
+                    className={styles.textTriangle + ` animate__animated animate__rollIn animate__delay-1s`}
+                    id="textTriangle"
+                >
+                    <span 
+                        onClick={() => setActiveSelection("gfx")}
+                    >
+                        Graphic Design
+                    </span>
+                    <span 
+                        onClick={() => setActiveSelection("web")}
+                    >
+                        Web Design
+                    </span>
+                    <span 
+                        onClick={() => setActiveSelection("photo")}
+                    >
+                        Photography
+                    </span>
                 </div>
             </div>
 
