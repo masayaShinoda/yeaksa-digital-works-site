@@ -1,0 +1,12 @@
+@import "./_variables.scss";
+
+.portfContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 100vw;
+    padding: 5% 0;
+    // border: 1px solid red;
+
+}

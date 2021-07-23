@@ -1,6 +1,7 @@
 import Layout from "../components/layout"
 import Image from "next/image"
 import { useState, useEffect } from "react"
+import PortfolioContainer from "../components/portfolioContainer"
 import styles from "../styles/portfolio.module.css"
 import left from "../public/1x/left-01.png"
 import bottom from "../public/1x/bottom-01.png"
@@ -19,7 +20,7 @@ export default function Portfolio() {
             document.querySelector("#rightTriangle").classList.remove(`${styles.active}`)            
             document.querySelector("#selectionTriangle").classList.add(`${styles.active}`)
             document.querySelector("#textTriangle").classList.add(`${styles.active}`)
-            document.querySelector("#portfolioTitle").textContent = "Graphics Design"
+            document.querySelector("#portfolioTitle").textContent = "Graphic Design"
             document.querySelector("#backBtn").classList.toggle("inactive")
 
         }
@@ -71,7 +72,11 @@ export default function Portfolio() {
                         &#8249; Back
                     </button>
                     <h1 style={{textAlign: `center`}} id="portfolioTitle">Portfolio</h1>
-                </span>
+                </span>                
+                {activeSelection && 
+                    <PortfolioContainer selection={activeSelection} />
+                }
+
                 <div
                     className={styles.selectionTriangle + ` animate__animated animate__rotateIn animate__delay-1s`}
                     id="selectionTriangle"

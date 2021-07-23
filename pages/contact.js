@@ -63,6 +63,7 @@ export default function Contact() {
     return (
         <Layout>
           <h1 style={{textAlign: `center`}}>Contact us</h1>
+          <p style={{color: `#535353`}}>Office hours: 9:30AM - 5:30PM (GMT+7)</p>
             <div className={styles.contactContainer}>
               <ContactForm />
               <iframe 

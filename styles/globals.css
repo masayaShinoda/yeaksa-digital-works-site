@@ -103,4 +103,8 @@ h1 {
     font-size: 21px;
   }
 }
+
+.image-gallery {
+  max-width: 100%;
+}
 /*# sourceMappingURL=globals.css.map */
