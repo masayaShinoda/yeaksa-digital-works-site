@@ -71,7 +71,7 @@ export default function Portfolio() {
                     >
                         &#8249; Back
                     </button>
-                    <h1 style={{textAlign: `center`}} id="portfolioTitle">Portfolio</h1>
+                    <h1 style={{textAlign: `center`}} id="portfolioTitle" className="animate__animated animate__slideInRight">Portfolio</h1>
                 </span>                
                 {activeSelection && 
                     <PortfolioContainer selection={activeSelection} />

@@ -106,5 +106,35 @@ h1 {
 
 .image-gallery {
   max-width: 100%;
+  -webkit-animation-name: image-gallery;
+          animation-name: image-gallery;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-duration: 1200ms;
+          animation-duration: 1200ms;
+}
+
+@-webkit-keyframes image-gallery {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+@keyframes image-gallery {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=globals.css.map */

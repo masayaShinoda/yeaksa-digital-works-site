@@ -115,9 +115,9 @@
 
 .selectionTriangle.active, .textTriangle.active {
   margin-right: 200%;
-  -webkit-transition: .8s ease-in-out;
-  transition: .8s ease-in-out;
-  -webkit-transition-delay: .8;
-          transition-delay: .8;
+  -webkit-transition: 800ms ease-in-out;
+  transition: 800ms ease-in-out;
+  -webkit-transition-delay: 69ms;
+          transition-delay: 69ms;
 }
 /*# sourceMappingURL=portfolio.module.css.map */
