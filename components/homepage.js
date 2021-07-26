@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import HomepageSlideshow from "./homepageSlideshow"
+import AboutTeam from "./aboutTeam"
 import styles from "../styles/homepage.module.css"
 
 export default function Homepage() {
@@ -32,6 +33,7 @@ export default function Homepage() {
                     Making good design <br /><span id="hero" className={styles.hero}>accessible</span>
                 </h1>
                 <HomepageSlideshow />
+                <AboutTeam />
             </section>
             
             {/* <script async src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script> */}
