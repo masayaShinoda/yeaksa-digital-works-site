@@ -2,7 +2,7 @@ import { NextSeo } from 'next-seo'
 import Nav from "../components/nav.js"
 import styles from "../styles/layout.module.css"
 import Head from "next/head"
-import Script from 'next/script'
+// import Script from 'next/script'
 
 
 export default function Layout({ children, pageName }) {
@@ -13,7 +13,7 @@ export default function Layout({ children, pageName }) {
                 <title>YeakSa Digital Works</title>
                 <meta name="description" content="Design agency based in Phnom Penh with an Esports niche." />
                 <link rel="icon" href="/icons/brand-identity-golden-ratio-08_result.ico" />
-                <script async src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+                <script async strategy="beforeInteractive" src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js" />
                 
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
