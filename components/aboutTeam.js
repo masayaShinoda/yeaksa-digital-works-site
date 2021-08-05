@@ -45,7 +45,7 @@ export default function AboutTeam() {
                         </span>
                     </div>
                     <div className={styles.div3}>
-                    <Image src="/images/thira-balloon_result.webp" width="300" height="300" alt="Tinin Portrait" />
+                    <Image src="/images/tin-no-bg_result_1.webp" width="300" height="300" alt="Tinin Portrait" />
                         <span>
                             <h2>Thira Tinin</h2>
                             <small>
