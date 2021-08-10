@@ -11,6 +11,18 @@
         max-width: 50%;
         text-align: center;
     }
+    @media (max-width: $tablet-bp) {
+        .teamDescription {  
+            max-width: 65%;
+            
+        }
+    }
+    @media (max-width: $mobile-bp) {
+        .teamDescription {  
+            max-width: 80%;
+        }
+    }
+    
     .staffContainer {
         display: flex;
         padding: 50px 0;

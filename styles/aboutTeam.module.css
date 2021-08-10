@@ -20,6 +20,18 @@
   text-align: center;
 }
 
+@media (max-width: 1024px) {
+  .container .teamDescription {
+    max-width: 65%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container .teamDescription {
+    max-width: 80%;
+  }
+}
+
 .container .staffContainer {
   display: -webkit-box;
   display: -ms-flexbox;
