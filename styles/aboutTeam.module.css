@@ -15,6 +15,11 @@
           align-items: center;
 }
 
+.container .teamDescription {
+  max-width: 50%;
+  text-align: center;
+}
+
 .container .staffContainer {
   display: -webkit-box;
   display: -ms-flexbox;

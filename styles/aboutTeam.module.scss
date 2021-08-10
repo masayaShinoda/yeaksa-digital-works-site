@@ -7,6 +7,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    .teamDescription {
+        max-width: 50%;
+        text-align: center;
+    }
     .staffContainer {
         display: flex;
         padding: 50px 0;

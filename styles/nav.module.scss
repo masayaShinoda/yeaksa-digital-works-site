@@ -27,6 +27,7 @@
         a {
             margin: 0 1.1rem;
             transition: .2s color ease-in;
+            font-size: 24px;
         }
         a:hover {
             color: $ysdw-blue;
@@ -40,6 +41,11 @@
         .logoLink {
             width: 35%;
         }
+        nav {
+            a {
+                font-size: 21px;
+            }
+        }
     }
 }
 @media (max-width: $mobile-bp) {
@@ -52,8 +58,8 @@
         nav {
             a {
                 margin: 0 .5rem;
+                font-size: 18px;
             }
-
         }
     }
 }

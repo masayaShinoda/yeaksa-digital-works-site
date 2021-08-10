@@ -61,8 +61,10 @@ export default function AboutTeam() {
                             </a>
                         </span>
                     </div>
+                <p className={styles.teamDescription}>
+                    From the creative team behind <a href="https://yeaksa-esports.com">YeakSa Esports</a>, we aim to utilize our skills to help your business achieve a quality online presence.
+                </p>
                 </div>
-
             </Fade>
         </div>
     )

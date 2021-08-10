@@ -33,6 +33,7 @@
   margin: 0 1.1rem;
   -webkit-transition: .2s color ease-in;
   transition: .2s color ease-in;
+  font-size: 24px;
 }
 
 .navbar nav a:hover {
@@ -47,6 +48,9 @@
   .navbar .logoLink {
     width: 35%;
   }
+  .navbar nav a {
+    font-size: 21px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -59,6 +63,7 @@
   }
   .navbar nav a {
     margin: 0 .5rem;
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=nav.module.css.map */
