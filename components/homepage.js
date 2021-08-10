@@ -12,8 +12,8 @@ export default function Homepage() {
                     Making good design <br /><span id="hero" className={styles.hero}>the norm</span>
                 </h1>
                 <HomepageSlideshow />
-                <AboutTeam />
             </section>
+                <AboutTeam />
             
             {/* <script async src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script> */}
         </div>
