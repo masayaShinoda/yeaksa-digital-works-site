@@ -32,7 +32,7 @@ export default function AboutTeam() {
                         <span>
                             <h2>Chao Sokyoukin</h2>
                             <small>
-                                Manager & Digital Marketing
+                                VFX & Graphic Design
                             </small>
                         </span>
                         <span className={styles.socialContainer}>
