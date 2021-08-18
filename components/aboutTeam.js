@@ -28,7 +28,7 @@ export default function AboutTeam() {
                         </span>
                     </div>
                     <div className={styles.div2}>
-                    <Image src="/images/dekin-no-bg_result.webp" width="300" height="300" alt="Dekin Portrait" />
+                        <Image src="/images/dekin-no-bg_result.webp" width="300" height="300" alt="Dekin Portrait" />
                         <span>
                             <h2>Chao Sokyoukin</h2>
                             <small>
@@ -44,23 +44,9 @@ export default function AboutTeam() {
                             </a>                               
                         </span>
                     </div>
-                    <div className={styles.div3}>
-                    <Image src="/images/tin-no-bg_result_1.webp" width="300" height="300" alt="Tinin Portrait" />
-                        <span>
-                            <h2>Thira Tinin</h2>
-                            <small>
-                                Graphic Designer & 3D Artist
-                            </small>
-                        </span>
-                        <span className={styles.socialContainer}>
-                            <a href="https://www.behance.net/thiratinin">
-                                <Image src="/100w/behance.png" width="80" height="80" alt="Behance" />
-                            </a>
-                            <a href="https://t.me/thiratinin">
-                               <Image src="/100w/telegram.png" width="80" height="80" alt="Telegram" />
-                            </a>
-                        </span>
-                    </div>
+                    {/* <div className={styles.div3}>
+                    
+                    </div> */}
                 <p className={styles.teamDescription}>
                     From the creative team behind <a href="https://yeaksa-esports.com">YeakSa Esports</a>, we aim to utilize our skills to help your business achieve a quality online presence.
                 </p>
