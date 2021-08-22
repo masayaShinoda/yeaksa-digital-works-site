@@ -11,7 +11,7 @@ export default function AboutTeam() {
             <Fade bottom cascade>
                 <div className={styles.staffContainer}>
                     <div className={styles.div1}>
-                        <Image src="/images/maya-no-bg_result.webp" width="300" height="300" alt="Masaya Portrait" />
+                        <Image src="/images/maya-no-bg_result.webp" width="300" height="300" alt="Masaya Shida" />
                         <span>
                             <h2>Shida Masaya</h2>
                             <small>
@@ -28,7 +28,7 @@ export default function AboutTeam() {
                         </span>
                     </div>
                     <div className={styles.div2}>
-                        <Image src="/images/dekin-no-bg_result.webp" width="300" height="300" alt="Dekin Portrait" />
+                        <Image src="/images/dekin-no-bg_result.webp" width="300" height="300" alt="Chao Sokyoukin" />
                         <span>
                             <h2>Chao Sokyoukin</h2>
                             <small>
@@ -42,6 +42,23 @@ export default function AboutTeam() {
                             <a href="mailto:sokyoukin@gmail.com">
                                <Image src="/100w/email.png" width="80" height="80" alt="Email" />
                             </a>                               
+                        </span>
+                    </div>
+                    <div className={styles.div3}>
+                        <Image src="/images/soth-no-bg.webp" width="300" height="300" alt="Sokhon Keovisoth" />
+                        <span>
+                            <h2>Sokhon Keovisoth</h2>
+                            <small>
+                                Technical Assistant
+                            </small>
+                        </span>
+                        <span className={styles.socialContainer}>
+                            <a href="https://t.me/sothss">
+                               <Image src="/100w/telegram.png" width="80" height="80" alt="Telegram" />
+                            </a>
+                            <a href="mailto:sokyoukin@gmail.com">
+                               <Image src="/100w/email.png" width="80" height="80" alt="Email" />
+                            </a>
                         </span>
                     </div>
                     {/* <div className={styles.div3}>
