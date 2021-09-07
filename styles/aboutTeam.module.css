@@ -36,15 +36,18 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 50px 0;
+  padding: 50px 0 0 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-.container .staffContainer .div1, .container .staffContainer .div2, .container .staffContainer .div3 {
+.container .staffContainer .staffContent {
   width: 250px;
   height: 400px;
   display: -webkit-box;
@@ -63,24 +66,24 @@
   margin: 0 20px;
 }
 
-.container .staffContainer .div1 img, .container .staffContainer .div2 img, .container .staffContainer .div3 img {
+.container .staffContainer .staffContent img {
   max-height: 250px;
   min-width: 300px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.container .staffContainer .div1 span, .container .staffContainer .div2 span, .container .staffContainer .div3 span {
+.container .staffContainer .staffContent span {
   text-align: center;
   padding: 10px 0;
   width: 100%;
 }
 
 @media (max-width: 480px) {
-  .container .staffContainer .div1, .container .staffContainer .div2, .container .staffContainer .div3 {
+  .container .staffContainer .staffContent {
     margin: 20px 0;
   }
-  .container .staffContainer .div1 {
+  .container .staffContainer .staffContent:first-of-type {
     margin-top: 0;
   }
 }

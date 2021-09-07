@@ -25,11 +25,12 @@
     
     .staffContainer {
         display: flex;
-        padding: 50px 0;
+        padding: 50px 0 0 0;
         justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
 
-        .div1, .div2, .div3 {
+        .staffContent {
             width: 250px;
             height: 400px;
             // aspect-ratio: 3 / 4;
@@ -59,10 +60,10 @@
 
         @media (max-width: $mobile-bp) {
             
-            .div1, .div2, .div3 {
+            .staffContent {
                 margin: 20px 0;
             }
-            .div1 {
+            .staffContent:first-of-type {
                 margin-top: 0;
             }
         }
