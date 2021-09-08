@@ -64,7 +64,7 @@ export default function AboutTeam() {
                     <div className={styles.staffContent}>
                         <Image src="/images/JACK_result.webp" width="300" height="300" alt="Dekin Portrait" />
                         <span>
-                            <h2>Prom Danit</h2>
+                            <h2>Jack</h2>
                             <small>
                                 Videographer and Video Editor
                             </small>
